@@ -1,0 +1,152 @@
+.BodySection{min-height:auto; padding:75px 30px 30px 30px; /*background:#f3f5fa;*/}
+.MainOuter{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.MainItem{background: #fcfdfd; border-radius: 5px; border:1px solid #c5d5d8; box-sizing:border-box; background: rgba(255, 255, 255, 0.4);  box-shadow: inset 1px 1px 4px rgba(22, 33, 73, 0.1), 3px 3px 4px rgba(22, 33, 73, 0.2), inset -5px -4px 7px #fff, -5px -4px 5px #fff, -5px -4px 10px #fff;}
+.MainItem01,
+.MainItem02,
+.MainItem03,
+.MainItem04{flex:0 0 24%; height: 310px; cursor:default;}
+.MainItem05{flex:0 0 74.67%; height: calc(100vh - 470px); margin-top: 20px;}
+.MainItem06{flex:0 0 24%; height: calc(100vh - 470px); margin-top: 20px;}
+.MainInner{padding:19px 23px 25px; height: calc(100% - 44px);}
+.MainItem01 .MainInner{background: url(../img/main/graph_bg.png) center bottom no-repeat; background-position: bottom;}
+.MainTit strong{font-size: 19px; font-weight: 700; padding-bottom: 10px; display: inline-block;}
+.MainTit ul{padding-bottom: 10px;}
+.MainTit ul li{position: relative; padding-left: 13px; margin-left: 25px; font-weight: 600;}
+.MainTit ul li:before{position: absolute; left:-10px; top: 2px; content: ''; height: 17px; width: 17px; border-radius: 50%; background: #006c6c; }
+.MainTit ul li:nth-child(2):before{background: #daf0f2; }
+.MainCnt{height: calc(100% - 35px);}
+.MainItem03 .MainCnt{height: calc(100% - 50px); margin-top: 15px; }
+.MainItem04 .MainCnt{height: calc(100% - 61px); margin:20px 0 26px; }
+.MainItem05 .MainCnt{ height:calc(100% - 65px); margin-top: 25px;}
+.MainItem06 .MainCnt{height: calc(100% - 65px); margin-top: 30px;}
+.MainItem .MainTit{position: relative; }
+.MainItem .MainTit:after{position: absolute; left:0; bottom:0px; content: ''; background: #ced4e0; height: 1px; width: 100%; }
+.TotalAmount{font-size: 44px; font-weight: 500; margin-top: 25px;}
+.TotalAmountInfo{font-size: 16px; font-weight: 500; margin-top: 2px; color: #809097;}
+.MainItem06 ul{padding:30px 10px 0; display: flex; flex-wrap: wrap;}
+.MainItem06 ul li{flex:0 0 50%;}
+.MainItem06 ul li strong{position: relative; padding-left: 25px; margin-left: 0; margin-bottom: 10px; width: 65px; display: inline-block;}
+.MainItem06 ul li:last-child strong{margin-bottom: 0;}
+.MainItem06 ul li strong:before{position: absolute; left:0px; top: 2px; content: ''; height: 17px; width: 17px; border-radius: 50%; background: #006c6c; }
+.MainItem06 ul li:nth-child(2) strong:before{background: #daf0f2; }
+.MainItem06 ul li:nth-child(3) strong:before{background: #54a692; }
+canvas{width:100%;}
+.monthChart{border-radius: 6px;}
+.MainItem02 .MainCnt{margin:20px 0 10px; height:calc(100% - 65px);}
+.TargetRate{height:calc(100% - 31px); background:rgba(255,255,255,0.9); padding:20px 45px; display:flex; justify-content:center; flex-direction:column; border: 1px solid #d4d8df;}
+.TargetRate li{margin-bottom:20px; display:flex; justify-content:space-between; align-items:center; cursor:default; position:relative;}
+.TargetRate li:last-child{margin-bottom:10px;}
+.TargetRate li .TargetGoals{border:1px solid #006c6c; padding:8px 0 7px; border-radius:20px; text-align:center; display:inline-block; width:75px; box-sizing:border-box; font-size:14px; color:#006c6c; font-weight:600;}
+.TargetRate li .TargetNumber{ text-align:right; font-weight:700; font-size:24px; color:#224533;}
+.TargetRate li .TargetNoticeTit{ position:absolute; right:0; bottom: -22px; font-size:13px; color:#809097;}
+.FacilityList{display:flex;flex-direction:column; justify-content:space-between; height:calc(100%); padding: 0px 5px;/*background:#f0f9f7; padding:20px 25px;*/}
+.FacilityList li{background:#f4f9fb; border:1px solid #ced4e0; padding:2% 15px 1.9%; border-radius:10px; font-size:16px; box-sizing:border-box; cursor:default; color:#224533;}
+.FacilityList li:last-child{}
+.FacilityList li .FacilityRanking{width:25px; display:inline-block; text-align:center; margin-right:3px;}
+.FacilityList li .FacilityName{ font-weight:600; font-size:15px;}
+.FacilityList li .FacilityAmonut{ text-align:right; float:right;}
+
+/*.MainItem04 .MainCnt{margin:20px 0 10px; }
+.FacilityList{display:flex;flex-direction:column; justify-content:space-between; height:calc(100% - 20px); padding: 10px 15px;*//*background:#f0f9f7; padding:20px 25px;*//*}
+.FacilityList li{}
+.FacilityList li:last-child{}
+.FacilityList li .FacilityRanking{width:20px; display:inline-block;}
+.FacilityList li .FacilityName{}
+.FacilityList li .FacilityAmonut{ text-align:right; float:right;}*/
+
+@media screen and (max-width:1700px) {
+    .BodySection{min-height:auto; padding:70px 20px 20px 20px;}
+    .TargetRate{padding:20px 30px;}
+    .TotalAmount{font-size:36px;}
+    .MainTit strong{font-size:17px;}
+    .FacilityList li{font-size:15px;}
+    .FacilityList li .FacilityName{font-size:14px;}
+    /*.GaspercentChart{max-height:60%;}*/
+    .MainItem01, .MainItem02, .MainItem03, .MainItem04{height:280px;}
+    .MainItem05,
+    .MainItem06{height:calc(100vh - 425px);}
+    .MainItem06 .MainCnt{margin-top:25px;}
+    .MainItem06 ul{padding:20px 0 0;}
+    .MainItem06 ul li strong{margin-bottom:7px; width: 55px; text-align:left; padding-left:25px;}
+
+}
+@media screen and (max-width:1500px) {
+    .BodySection{padding:70px 25px 25px 25px;}
+    .MainItem01,
+    .MainItem02,
+    .MainItem03,
+    .MainItem04{height:260px;}
+    .MainItem05,
+    .MainItem06{height:calc(100vh - 403px); margin-top:17px;}
+    .TotalAmount{font-size:32px;}
+    .TotalAmountInfo{font-size:13px;}
+    .TargetRate{padding:20px;}
+    .TargetRate li .TargetGoals{width:60px; font-size:13px;}
+    .TargetRate li .TargetNumber{font-size:20px;}
+    .MainItem06 ul li{flex: 0 0 100%; margin-bottom:7px; text-align:center;}
+    .MainItem06 ul li:last-child{margin-bottom:0;}
+    .MainItem06 ul li strong{margin-bottom:0; width: 60px; text-align:left; padding-left:30px;}
+    .MainItem06 ul li span{width:80px; display:inline-block; text-align: left;}
+    .FacilityList li{padding:1.8% 15px 1.7%;}
+}
+@media screen and (max-width:1200px) {
+    .MainItem01, .MainItem02, .MainItem03, .MainItem04{flex:0 0 49%;}
+    .MainItem03, .MainItem04{margin-top:18px; height:300px;}
+    .MainItem05, .MainItem06{flex:0 0 100%; margin-top:18px; height:300px;}
+    .MainItem06{display:none;}
+}
+@media screen and (max-width:700px) {
+    .BodySection{padding:70px 20px 20px 20px;}
+    .MainItem01, .MainItem02, .MainItem03, .MainItem04{flex:0 0 100%;}
+    .MainItem02{margin-top:18px;}
+    .MainItem03{width:auto; height:100%;}
+    .MainItem04{height:auto; }
+    .MainItem05{height:auto;}
+    .MainItem05 .MainInner{height:auto;}
+    .MainItem06{display:block; height:auto;}
+    .MainItem04 .MainInner{height:auto;}
+    .MainItem04 .MainCnt{height:auto; margin-bottom:0;}
+    .MainItem01 .MainCnt{height:auto;}
+    .MainItem02{height:auto;}
+    .MainItem02 .MainInner{height:auto; padding:19px 23px 23px;}
+    .MainItem02 .MainCnt{height:auto; margin:20px 0px 0px; /*background:#f0f9f7;*/}
+    .MainItem06 .MainCnt{height:auto;}
+    .TargetRate{height:auto; padding:25px 20px 35px 20px; display:block;}
+    .FacilityList li{margin-bottom:10px;padding:10px 15px 8px;}
+    .FacilityList li:last-child{margin-bottom:0;}
+    .MainTit ul{padding-bottom:12px;}
+    /*.GaspercentChart{width:300px !important; height:300px !important; max-height:inherit;}*/
+    .MainItem06 ul li strong{width:36%;}
+}
+@media screen and (max-width:430px) {
+    .MainTit strong{font-size:17px;}
+    .MainTit ul li{ padding-left:7px; margin-left:20px; font-size:12px;}
+    .MainTit ul li:before{width:12px; height:12px; top:2px;}
+    .MainItem01{height:auto;}
+    .MainItem01 .MainInner {height:auto; background:url(../img/main/graph_bg.png) center bottom -20px no-repeat; padding-bottom:90px;}
+    .FacilityList li{padding:7px 15px 5px; font-size:14px;}
+    /*.GaspercentChart{width:250px !important; height:250px !important; max-height:inherit;}*/
+}
+@media screen and (max-width:370px) {
+    .TargetRate li .TargetGoals{width:52px; padding:6px 0 4px; font-size:12px;}
+    .TargetRate li .TargetNumber{font-size:18px;}
+}
+
+
+/*DarkTheme*/
+.DarkTheme .MainItem{background:rgba(255, 255, 255, 0.1); background-image: linear-gradient(120deg, #2e3033, #2a2d35); box-shadow:inset 1px 1px 10px rgba(255,255,255,0.07),1px 3px 18px rgba(0,0,0,0.99); border:1px solid rgba(96,101,113);}
+.DarkTheme .MainTit strong{font-weight:400;}
+.DarkTheme .MainTit ul li{font-weight:300;}
+.DarkTheme .MainItem .MainTit:after{background:rgba(255,255,255,0.5);}
+.DarkTheme .MainItem01 .MainInner { background: url(../img/main/graph_bg_dark.png) center bottom no-repeat;}
+.DarkTheme .TargetRate{background:rgba(196,223,229,0.1);}
+.DarkTheme .TargetRate li .TargetGoals{color: #c9dfd9; border: 1px solid #c9dfd9;}
+.DarkTheme .TargetRate li .TargetNumber{color: #c9dfd9;}
+.DarkTheme .TargetRate li .TargetNoticeTit{color:#8a9999;}
+.DarkTheme .FacilityList li{background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.3); color:#c9dfd9; font-weight:300;}
+.DarkTheme .MainItem06 ul li{font-weight:200;}
+.DarkTheme .MainItem06 ul li strong{font-weight:400;}
+
+@media screen and (max-width:430px) {
+    .DarkTheme  .MainItem01 .MainInner {height:auto; background:url(../img/main/graph_bg_dark.png) center bottom -20px no-repeat; padding-bottom:90px;}
+}
